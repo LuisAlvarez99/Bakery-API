@@ -1,0 +1,11 @@
+<div id="food-container">
+
+    <% @arr.each do |x| %> 
+        <div class = "food-card">
+            <p> <%= x["label"] %> </p>  
+            <img src="<%= x["image"] %>" width = "300px" height = "auto">  
+            <p>$1.00</p>
+        </div>
+    <% end %>
+    
+</div>

@@ -1,4 +1,20 @@
 body {
+    font-family: fantasy;
     margin: 0%;
-    /* background-image: url('https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');  */
+    background-image: url('https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); 
+}
+
+#food-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 
+}
+
+.food-card{
+    width: auto;
+    height: auto;
+    text-align: center;
+    border: 3px solid red;
+    background-color: rgba(171, 216, 211, 0.564)
+;
 }
