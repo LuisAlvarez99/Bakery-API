@@ -22,17 +22,34 @@ get '/cookies' do
 end
 
 post '/' do
-    @food = params['food']
-    @num = params['to'].to_i
-    req = Curl::Easy.perform(@@path + "?q=#{@food}&app_id=a2d96ba1&app_key=3e4694ce3477d438bf0a3c273eafd9e3&from=0&to=#{@num}&calories=591-722&health=alcohol-free")
+    req = Curl::Easy.perform(@@path + "?q=#{params[:food]}&app_id=#{ENV['EDAMAM_ID']}&app_key=#{ENV['EDAMAM_API']}&from=0&to=#{params[:to]}")
     res = JSON.parse(req.body)
     @arr = []
     x = 0
-    while x < @num
+    while x < "#{params[:to]}".to_i
         @data = res["hits"][x]["recipe"]
         @arr << @data
         x += 1
     end
     puts @data  
     erb :food
+<<<<<<< Updated upstream
+=======
+end
+
+
+get '/cake' do
+    "This is where you see cake"
+
+end
+
+get '/muffins' do
+    "This is where you see Muffin"
+
+end
+
+get '/cookies' do
+    "This is where you see cookie"
+
+>>>>>>> Stashed changes
 end
