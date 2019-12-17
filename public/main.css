@@ -2,19 +2,98 @@ body {
     font-family: fantasy;
     margin: 0%;
     background-image: url('https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#top{
+    margin: 0;
+    
+}
+
+#top-content{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(201, 146, 65, 0.8);
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#nav-container{
+    padding-left: 4%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 18vh / repeat(3,30vw);
+    align-items: center;
+    text-align: center;
+}
+
+.nav-itm{
+    padding-top: 2%;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-itm:hover{
+    background-color: rgba(171, 216, 211, 0.65);
+}
+
+.nav-itm:nth-child(1):hover{
+    background-image: url('https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding-right: 13%;
+}
+.nav-itm:nth-child(2):hover{
+    background-image: url('https://images.pexels.com/photos/3095042/pexels-photo-3095042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding-right: 11%;
+}
+.nav-itm:nth-child(3):hover{
+    background-image: url('https://live.staticflickr.com/7826/40353219593_fd137209ca_b.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding-right: 11%;
 }
 
 #food-container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    grid-gap: 
+    grid-gap: 6px;
+    margin: 3px 10px 0 10px;
 }
 
 .food-card{
     width: auto;
     height: auto;
     text-align: center;
-    border: 3px solid red;
-    background-color: rgba(171, 216, 211, 0.564)
-;
+    border-radius: 30px;
+    background-color: rgba(171, 216, 211, 0.65);
 }
+
+.search-box{
+    background-color: rgba(171, 216, 211, 0.65) ;
+    text-align: center;
+    border-radius: 30px;
+    border-color: rgb(201, 146, 65);
+}
+.submit-box{
+    background-color: rgba(171, 216, 211, 0.65) ;
+    text-align: center;
+    border-radius: 30px;
+    border-color: rgb(201, 146, 65);
+}
+
+.submit-box:hover {
+   box-shadow: 0 0 30px 5px #0ff;
+}
+
+
+/* .ingredients {
+    height: 20%;
+    overflow-y: scroll;
+} */

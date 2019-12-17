@@ -1,14 +1,25 @@
-<%# <%if(!(@arr.nil?)) %>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bakers Man</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
 
 <div id="food-container">
 
-    <% @arr.each do |x| %> 
+    <% @arrK.each do |x| %> 
         <div class = "food-card">
             <p> <%= x["label"] %> </p>  
             <img src="<%= x["image"] %>" width = "300px" height = "auto">  
+            <%# <div class = "ingredients"> %>
+            <%# <% x["ingredientLines"].each do |y| %> 
+            <%# <p> <%= y %> </p> 
+            <%# <% end %> 
+            <%# </div> %>
             <p>$1.00</p>
         </div>
     <% end %>
     
 </div>
-<%# <% end %>

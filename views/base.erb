@@ -1,0 +1,35 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bakers Man</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id = "top-content">
+    <header>
+        <h1 id='top'>2 Bros Bakery</h1>
+    </header>
+
+    <nav id = "nav-container">
+        <a href="/cake" class = "nav-itm"><h3 >Cake</h3></a>
+        <a href="/cookies" class = "nav-itm"><h3 >Cookies</h3></a>
+        <a href="/muffins" class = "nav-itm"><h3 >Muffins</h3></a>
+    </nav>
+
+
+    <form action="/" method="POST">
+        <input class = "search-box" name="food" placeholder="food" />
+        <input class = "search-box" name="to" placeholder="# of recipies"/>
+        <button class = "submit-box">Submit</button>
+    </form>
+
+    <h3>You've heard of dollar pizza.... now there is dollar pastries!! <br> 2 Bros Bakery. Good stuff cheap :)</h3>
+
+    </div>
+
+
+    <%= yield %>
+    <script src="main.js"></script>
+</body>
