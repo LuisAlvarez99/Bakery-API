@@ -9,6 +9,18 @@ get '/' do
     erb :Home
 end
 
+get '/cake' do
+    erb :cake
+end
+
+get '/muffins' do
+    erb :muffins
+end
+
+get '/cookies' do
+    erb :cookies
+end
+
 post '/' do
     @food = params['food']
     @num = params['to'].to_i
@@ -23,17 +35,4 @@ post '/' do
     end
     puts @data  
     erb :food
-end
-
-
-get '/cake' do
-    erb :cake
-end
-
-get '/muffins' do
-    erb :muffins
-end
-
-get '/cookies' do
-    erb :cookies
 end
