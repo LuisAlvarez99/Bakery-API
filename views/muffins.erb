@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
+<nav id = "nav-container">
+        <a href="/cake" class = "nav-itm"><h3 >Cake</h3></a>
+        <a href="/cookies" class = "nav-itm"><h3 >Cookies</h3></a>
+        <a href="/muffins" class = "nav-itm"><h3 >Muffins</h3></a>
+    </nav>
+
 
 <div id="food-container">
 
@@ -13,7 +19,9 @@
         <div class = "food-card">
             <p> <%= x["label"] %> </p>  
             <img src="<%= x["image"] %>" width = "300px" height = "auto">  
-            <p>$1.00</p>
+            <h4>$1.00</h4>
+            <p> Tis a mere iteration of our varity of Muffins. Just as delicious as any other and... only a dollar :) </p>
+
         </div>
     <% end %>
     
